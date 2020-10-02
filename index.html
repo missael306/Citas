@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sex-Service</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/jquery-confirm/jquery-confirm.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/57b6ea0eb8.js" crossorigin="anonymous"></script>
+
+  <!-- =======================================================
+    Theme Name: DevFolio
+    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Sex-Service</a>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">Tu opinión nos importa</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Citas románticas,Sexo desenfrenado,Guarda las
+              apariencias,Levanta tu imagen,Diversión garantizada</span><strong class="text-slider"></strong></p>
+          <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button" id="encuesta">Encuesta de
+              servicio</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-sm-12" id="colFrmFeedBack">
+                <h3 class="text-center">Satisfacción en el servicio</h3>
+                <p>Tu opinión nos ayuda a mejorar nuestro servicio, por favor responde la encuesta de satisfacción</p>
+                <hr>
+                <form action="https://prod-09.centralus.logic.azure.com:443/workflows/73818ae4c60b41438a969f2933a3fb20/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=xPPc1DV7cFmV4IENXSzrieDvfOTXffNw55gHK6gxSj8" method="post" role="form" enctype="application/json" class="contactForm" id="frmfeedBack">
+                  <div class="row">
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">                        
+                        <div class="row">
+                          <div class="col-md-6 col-sm-12 form-group">
+                            <input type="text" class="form-control" id="txtNombre" placeholder="Nombre completo" required>
+                          </div>                          
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿El agente cuenta con una buena presentación?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtPresentacionTrue" name="presentacion" value="true" required>
+                            <label for="rbtPresentacionTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtPresentacionFalse" name="presentacion" value="false">
+                            <label for="rbtPresentacionFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿El agente presenta una vestimenta adecuada a su cita?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtVestimentaTrue" name="vestimenta" value="true" required>
+                            <label for="rbtVestimentaTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtVestimentaFalse" name="vestimenta" value="false">
+                            <label for="rbtVestimentaFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿El agente ha sido capaz de mantener una charla entretenida e interesante durante su
+                          cita?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtCharlaTrue" name="charla" value="true" required>
+                            <label for="rbtCharlaTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtCharlaFalse" name="charla" value="false">
+                            <label for="rbtCharlaFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿El agente hace uso de una colonia acorde a su cita?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtColoniaTrue" name="colonia" value="true" required>
+                            <label for="rbtColoniaTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtColoniaFalse" name="colonia" value="false">
+                            <label for="rbtColoniaFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿Cuenta el agente con buenos modales?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtModalesTrue" name="modales" value="true" required>
+                            <label for="rbtModalesTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtModalesFalse" name="modales" value="false">
+                            <label for="rbtModalesFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿Se ha comportado el agente como un caballero?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtCaballeroTrue" name="caballero" value="true" required>
+                            <label for="rbtCaballeroTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtCaballeroFalse" name="caballero" value="false">
+                            <label for="rbtCaballeroFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿El itinerario de su cita ha sido el acordado?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtItinerarioTrue" name="itinerario" value="true" required>
+                            <label for="rbtItinerarioTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtItenerarioFalse" name="itinerario" value="false">
+                            <label for="rbtItenerarioFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿Su cita ha sido una experiencia grata para usted?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtExperienciaTrue" name="experiencia" value="true" required>
+                            <label for="rbtExperienciaTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtExperienciaFalse" name="experiencia" value="false" required>
+                            <label for="rbtExperienciaFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿Volvería a solicitar los servicios de nuestro agente?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtFuturoTrue" name="futuro" value="true" required>
+                            <label for="rbtFuturoTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtFuturoFalse" name="futuro" value="false">
+                            <label for="rbtFuturoFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>¿El agente parece ser una persona confiable?</label>
+                        <div class="row">
+                          <div class="col">
+                            <input type="radio" id="rbtConfiableTrue" name="confiable" value="true" required>
+                            <label for="rbtConfiableTrue">Si</label><br>
+                          </div>
+                          <div class="col">
+                            <input type="radio" id="rbtConfiableFalse" name="confiable" value="false">
+                            <label for="rbtConfiableFalse">No</label><br>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <label>Ofrece una propina a tu acompañante...</label>
+                            <div class="row">
+                              <div class="col">
+                                <input type="checkbox" id="sexoDesenfrenado" name="sexoDesenfrenado"
+                                  value="sexo" required><label class="pl-2" for="sexoDesenfrenado"> Sexo desenfrenado</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <input type="checkbox" id="baileSensual" name="baileSensual"
+                                  value="baile"><label class="pl-2" for="baileSensual"> Baile sensual para el</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <input type="checkbox" id="filme" name="filme"
+                                  value="filme"><label class="pl-2" for="filme"> Filme erótico</label>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <input type="checkbox" id="despues" name="despues"
+                                  value="despues"><label class="pl-2" for="despues"> En otra ocasión</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="row justify-content-center">
+                          <div class="col-6">
+                            <input type="submit" class="btn btn-primary btn-lg btn-block" id="btnSendFeedBack"
+                              value="Enviar">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>                
+              </div>  
+              <div class="col-sm-12 services-mf route" id="colServices">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="title-box text-center">
+                        <h3 class="title-a">
+                          Paquetes
+                        </h3>
+                        <p class="subtitle-a">
+                          Vive una experiencia única, subscribete en uno de nuestros paquetes.
+                        </p>
+                        <div class="line-mf"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="service-box">
+                        <div class="service-ico">
+                          <span class="ico-circle"><i class="far fa-kiss-beam"></i></span>
+                        </div>
+                        <div class="service-content">
+                          <h2 class="s-title">Ocasional</h2>
+                          <ul>
+                            <li>Citas Ocasionales</li>
+                            <li>Mensajes durante el dia, incluye buenos dias y buenas noches.</li>
+                            <li>Piropos ocasionales</li>
+                            <li>Sexo ilimitado</li>
+                            <li>Muestras de afecto ocasionales</li>
+                            <li>Nulo contacto con familiares y amigos</li>
+                            <li>Comparte tu subscripción con 10 o mas socias</li>
+                          </ul>
+                          <button type="button" class="btn btn-primary btn-lg btn-block btnSubscribe" data-type="1">¡Lo quiero!</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="service-box">
+                        <div class="service-ico">
+                          <span class="ico-circle"><i class="fas fa-heart"></i></span>
+                        </div>
+                        <div class="service-content">
+                          <h2 class="s-title">Premium</h2>
+                          <ul>
+                            <li>Citas regulares, incluyendo comprar ropa, cine, comida, cena y cumpleaños</li>
+                            <li>Comunicación abierta 24/7</li>
+                            <li>Piropos ilimitados</li>
+                            <li>Sexo ilimitado</li>
+                            <li>Muestras de afecto ilimitado</li>
+                            <li>Contacto con amigos y familiares</li>
+                            <li>Subscripción 100% exclusiva</li>
+                          </ul>
+                          <button type="button" class="btn btn-primary btn-lg btn-block btnSubscribe" data-type="2">¡Lo quiero!</button>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="lib/jquery-confirm/jquery-confirm.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
